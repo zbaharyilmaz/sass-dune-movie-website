@@ -1,0 +1,69 @@
+@media screen and (max-width: 1220px) {
+  #Header {
+    h2 {
+      margin-top: 3rem;
+      font-weight: 100;
+      @include fadeIn;
+    }
+    height: 85vh;
+    img {
+      margin: 20vh auto;
+    }
+  }
+  #Movie {
+    flex-direction: column;
+    h2,
+    i {
+      margin-bottom: $xxl;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #Navigation {
+    ul {
+      display: none;
+    }
+    #nav-btn {
+      display: block;
+    }
+  }
+  #Header {
+    img {
+      margin: 10vh auto;
+      transform: scale(0.6);
+      max-width: 100%;
+    }
+    h2 {
+      font-size: $lg;
+      padding: 0 1rem;
+    }
+  }
+  #Movie {
+    h2 {
+      font-size: $lg;
+      padding: 0 1rem;
+    }
+    img {
+      height: 200px;
+      max-width: 100%;
+    }
+  }
+  #Latest-news {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+    h3 {
+      font-size: $md;
+      padding: 0 1rem;
+    }
+    p {
+      padding: 0 1rem;
+    }
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}

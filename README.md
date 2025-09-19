@@ -1,119 +1,265 @@
-# Dune Movie Website
+# Dune Movie Website React
 
-A responsive website built with HTML5, CSS3, and Sass/SCSS showcasing the epic Dune universe. This project demonstrates modern web development practices with clean, organized code and responsive design.
+A modern, responsive website dedicated to the Dune movie franchise built with React, TypeScript, and SCSS.
 
-## 🎬 Visual Demo
+## 🌟 Features
 
-![Dune Website Demo](./assets/media/website.gif)
+- **Responsive Design**: Fully responsive across all devices (desktop, tablet, mobile)
+- **Modern UI/UX**: Dark theme with gold accents inspired by the Dune universe
+- **Interactive Trailers**: YouTube-embedded trailers with "Show More" functionality
+- **Multi-page Navigation**: Dedicated pages for Authors, Novels, and Books
+- **Smooth Animations**: CSS animations and transitions for enhanced user experience
+- **Newsletter Signup**: Email subscription functionality
+- **Scroll to Top**: Automatic scroll to top when navigating between pages
 
-## 🚀 Features
+## 🎬 Demo
 
-- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
-- **Sass Architecture**: Modular Sass structure with partials and mixins
-- **Interactive Elements**: Smooth scrolling, hover effects, and animations
-- **Newsletter Integration**: EmailJS integration for subscription forms
-- **Multi-page Structure**: Organized content across multiple pages
-- **SEO Optimized**: Meta tags, Open Graph, and Twitter Cards
+Check out the live demo of the Dune Movie Website:
+
+![Dune Movie Website Demo](assets/media/website.gif)
+
+_Experience the full Dune universe with smooth animations, responsive design, and interactive features._
+
+### 🎯 Demo Highlights
+
+- **Responsive Design**: See how the website adapts to different screen sizes
+- **Interactive Trailers**: Watch embedded YouTube trailers with smooth transitions
+- **Navigation**: Experience the smooth page transitions and mobile menu
+- **Newsletter**: Test the email subscription functionality
+- **Animations**: Enjoy the subtle hover effects and loading animations
+
+## 📱 Responsive Breakpoints
+
+- **Desktop**: 1220px and above
+- **Tablet**: 600px - 1219px
+- **Small Phones**: 481px - 600px
+- **Extra Small Phones**: 320px - 480px
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React 19.1.1
+- **Language**: TypeScript 4.9.5
+- **Styling**: SCSS/Sass 1.92.1
+- **Routing**: React Router DOM 7.9.1
+- **Email Service**: EmailJS 4.4.1
+- **Build Tool**: Create React App
 
 ## 📁 Project Structure
 
 ```
-sass-dune-movie-website/
-├── assets/                    # Static assets
-│   ├── images/               # Images and graphics
-│   └── media/                # Media files
-├── css/                      # Compiled CSS
-│   ├── style.css
-│   └── style.css.map
-├── js/                       # JavaScript files
-│   ├── main.js              # Core functionality
-│   └── newsletter.js        # Newsletter features
-├── pages/                    # Individual pages
-│   ├── authors.html
-│   ├── books.html
-│   └── novels.html
-├── Sass/                     # Source Sass files
-│   ├── components/          # Component styles
-│   ├── utilities/           # Utilities and helpers
-│   └── style.scss          # Main Sass file
-├── index.html               # Homepage
-├── package.json            # Build configuration
-└── README.md
+src/
+├── components/          # Reusable React components
+│   ├── AuthorsSection.tsx
+│   ├── BackToTopButton.tsx
+│   ├── BuyBooksSection.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── LatestNewsSection.tsx
+│   ├── MovieSection.tsx
+│   ├── Navigation.tsx
+│   ├── NovelsSection.tsx
+│   ├── QuickLinksSection.tsx
+│   ├── ScrollToTop.tsx
+│   ├── SignUpSection.tsx
+│   └── TrailerSection.tsx
+├── hooks/              # Custom React hooks
+│   ├── useMainFunctionality.ts
+│   └── useNewsletter.ts
+├── pages/              # Page components
+│   ├── AuthorsPage.tsx
+│   ├── BooksPage.tsx
+│   └── NovelsPage.tsx
+├── Sass/               # SCSS stylesheets
+│   ├── components/     # Component-specific styles
+│   ├── utilities/      # Variables, mixins, responsive
+│   └── style.scss      # Main stylesheet
+├── App.tsx             # Main application component
+├── index.tsx           # Application entry point
+└── index.css           # Global CSS styles
 ```
-
-## 🛠️ Technologies Used
-
-- **HTML5**: Semantic markup and accessibility
-- **CSS3**: Modern styling with Grid and Flexbox
-- **Sass/SCSS**: CSS preprocessing with variables, mixins, and nesting
-- **JavaScript**: Interactive functionality and form handling
-- **EmailJS**: Client-side email service integration
-- **Font Awesome**: Icon library
-- **Google Fonts**: Custom typography
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js and npm
-- Sass compiler
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/zbaharyilmaz/sass-dune-movie-website.git
-cd sass-dune-movie-website
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Compile Sass:
-
-```bash
-npm run build-css
-```
-
-4. Watch for changes:
-
-```bash
-npm run watch-css
-```
-
-5. Start local server:
-
-```bash
-npm run serve
-```
-
-## 📱 Pages
-
-- **Homepage**: Overview with trailers, news, and quick links
-- **Authors**: Detailed biographies of Frank Herbert, Brian Herbert, and Kevin J. Anderson
-- **Novels**: Complete Dune series with reading order
-- **Books**: Retailer links and purchasing options
 
 ## 🎨 Design Features
 
-- **Color Scheme**: Gold and dark theme inspired by Dune's aesthetic
-- **Typography**: Custom fonts for headers and body text
-- **Animations**: Smooth transitions and hover effects
-- **Responsive**: Optimized for all device sizes
-- **Accessibility**: Semantic HTML and proper contrast ratios
+### Color Palette
 
-## 🔧 Build Scripts
+- **Primary Gold**: #be984f
+- **Mid Gold**: #c0af70
+- **Light Gold**: #cfb591
+- **Dark Background**: #000000
 
-- `npm run sass`: Watch and compile Sass
-- `npm run build-css`: Compile Sass once
-- `npm run serve`: Start local development server
-- `npm run dev`: Run both Sass watch and server
+### Typography
 
-## 🌐 Deployment
+- **Headings**: Custom font with gold styling
+- **Body Text**: Clean, readable fonts with proper contrast
+- **Responsive Sizing**: Scales appropriately across devices
 
-The website is deployed on GitHub Pages and can be accessed at:
-[https://zbaharyilmaz.github.io/sass-dune-movie-website/](https://zbaharyilmaz.github.io/sass-dune-movie-website/)
+### Components
+
+- **Navigation**: Collapsible mobile menu with smooth transitions
+- **Trailers**: Responsive video grid with hover effects
+- **Cards**: Hover animations and shadow effects
+- **Forms**: Styled input fields with focus states
+
+## 🚀 Getting Started
+
+### 🌐 Demo
+
+Demo: [View Demo]()
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/zbaharyilmaz/sass-dune-movie-website.git
+   cd sass-dune-movie-website
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `build` folder.
+
+## 📄 Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+## 🌐 Pages
+
+### Homepage (`/`)
+
+- Hero section with Dune movie announcement
+- Official trailers with "Show More" functionality
+- Latest news and updates
+- Quick links to other sections
+- Newsletter signup
+
+### Authors Page (`/authors`)
+
+- Biographies of Frank Herbert, Brian Herbert, and Kevin J. Anderson
+- Key achievements and works
+- Timeline of Dune universe development
+
+### Novels Page (`/novels`)
+
+- Complete list of Dune novels
+- Organized by series (Original Chronicles, Prelude, Legends)
+- Publication years and descriptions
+
+### Books Page (`/books`)
+
+- Retailer links (Amazon, Barnes & Noble, Audiobooks)
+- Direct purchase links
+- Reading order recommendations
+
+## 📱 Responsive Features
+
+### Mobile Navigation
+
+- **Sticky Navigation**: Navigation bar stays at the top when scrolling
+- **Hamburger Menu**: Touch-friendly hamburger menu for mobile devices
+- **Collapsible Navigation**: Smooth dropdown menu with backdrop blur
+- **Touch-Friendly Interface**: 44px minimum touch targets for all interactive elements
+- **Optimized for Small Screens**: Special breakpoints for phones as small as 320px
+
+### Grid Layouts
+
+- Responsive grid systems for all content sections
+- Auto-adjusting columns based on screen size
+- Optimized spacing for different devices
+
+### Typography
+
+- Scalable font sizes
+- Readable line heights
+- Proper contrast ratios
+
+### 📱 Mobile Phone Optimizations
+
+- **Touch-Friendly Buttons**: All buttons meet iOS/Android touch target guidelines (44px minimum)
+- **Responsive Videos**: YouTube trailers automatically adjust to screen size with 16:9 aspect ratio
+- **Optimized Forms**: Larger input fields with better focus states for mobile keyboards
+- **Sticky Navigation**: Navigation stays accessible while scrolling
+- **Backdrop Blur**: Modern glassmorphism effect on mobile navigation
+- **Smooth Animations**: Touch-optimized hover and active states
+- **Viewport Optimization**: Prevents unwanted zooming and ensures proper scaling
+
+## 🎯 Performance Optimizations
+
+- **Code Splitting**: Automatic code splitting with React Router
+- **Lazy Loading**: Images and components load as needed
+- **Optimized Build**: Production build with minification
+- **SCSS Compilation**: Efficient CSS preprocessing
+
+## 🔧 Customization
+
+### Adding New Pages
+
+1. Create a new component in `src/pages/`
+2. Add the route in `src/App.tsx`
+3. Update navigation if needed
+
+### Styling
+
+- Modify SCSS variables in `src/Sass/utilities/_variables.scss`
+- Add new styles in `src/Sass/style.scss`
+- Component-specific styles in `src/Sass/components/`
+
+### Content Updates
+
+- Update content directly in component files
+- Modify images in `public/assets/images/`
+- Update links and external references
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📸 Screenshots
+
+### Desktop View
+
+![Desktop Screenshot](assets/images/desktop-screenshot.png)
+
+### Mobile View
+
+![Mobile Screenshot](assets/images/mobile-screenshot.png)
+
+### Tablet View
+
+![Tablet Screenshot](assets/images/tablet-screenshot.png)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**May the spice flow!** 🌌

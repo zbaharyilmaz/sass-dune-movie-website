@@ -1,0 +1,695 @@
+@use "./variables" as *;
+
+// Extra small phones (320px - 480px)
+@media screen and (max-width: 480px) {
+  #Navigation {
+    padding: 0.3rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    
+    img {
+      height: 35px;
+    }
+    
+    #nav-btn {
+      padding: 0.8rem;
+      min-height: 44px;
+      min-width: 44px;
+      border-radius: 6px;
+      background: transparent;
+      border: 2px solid #be984f;
+      
+      &:hover, &:active {
+        background: rgba(190, 152, 79, 0.1);
+        transform: scale(1.05);
+      }
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
+    
+    ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      
+      li {
+        margin: 0.5rem 0;
+        
+        a {
+          display: block;
+          padding: 0.8rem 1rem;
+          min-height: 44px;
+          border-radius: 6px;
+          transition: all 0.3s ease;
+          
+          &:hover, &:active {
+            background: rgba(190, 152, 79, 0.1);
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+  }
+
+  #Header {
+    padding: 0.5rem 0;
+
+    .announcement-banner {
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      h1 {
+        font-size: $lg;
+        margin: 0.3rem 0;
+        line-height: 1.1;
+      }
+
+      h2 {
+        font-size: $md;
+        margin: 0.2rem 0;
+      }
+
+      p {
+        font-size: $xs;
+        margin-top: 0.3rem;
+      }
+    }
+
+    h1 {
+      font-size: $md;
+      padding: 0 0.5rem;
+      line-height: 1.1;
+    }
+
+    img {
+      margin-top: 0.5rem;
+      max-width: 95%;
+    }
+  }
+
+  #Movie {
+    padding: 1rem 0;
+
+    .movie-content {
+      gap: 0.8rem;
+    }
+
+    .movie-logo {
+      max-width: 280px;
+      max-height: 200px;
+    }
+
+    .play-btn {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #Latest-news {
+    .news-article {
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+
+      h3 {
+        font-size: $md;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        font-size: $sm;
+        margin-bottom: 1rem;
+      }
+
+      .news-image {
+        margin: 1rem 0;
+
+        img {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+
+  #Sign-up {
+    .form {
+      padding: 1rem;
+
+      h3 {
+        font-size: $md;
+        margin-bottom: 1rem;
+      }
+
+      .input-group {
+        margin-bottom: 0.8rem;
+
+        input {
+          padding: 0.8rem; // Increased for better touch interaction
+          font-size: 0.9rem;
+          min-height: 44px; // Touch-friendly height
+          border-radius: 6px;
+          border: 2px solid #be984f;
+          
+          &:focus {
+            outline: none;
+            border-color: #c0af70;
+            box-shadow: 0 0 0 3px rgba(190, 152, 79, 0.2);
+          }
+        }
+        
+        label {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+          display: block;
+        }
+      }
+
+      .form-action .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        min-height: 44px;
+        width: 100%;
+      }
+    }
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  // Touch-friendly buttons for mobile
+  .btn {
+    min-height: 44px; // iOS recommended minimum touch target
+    min-width: 44px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    
+    &:hover, &:active {
+      transform: scale(1.02);
+    }
+  }
+
+  // Touch-friendly links
+  a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // New sections for extra small screens
+  #novels,
+  #author-bios,
+  #buy-books {
+    padding: 1rem 0;
+
+    .novels-grid,
+    .authors-grid,
+    .retailers-grid {
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .novel-category,
+    .author-card,
+    .retailer-card {
+      padding: 1rem;
+    }
+  }
+
+  // Back to Top Button for extra small screens
+  .back-to-top-btn {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+
+    i {
+      font-size: 0.9rem;
+    }
+  }
+
+  // Trailer for extra small screens
+  #trailer {
+    .trailers-grid {
+      gap: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .trailer-item {
+      h3 {
+        font-size: $md;
+        margin-bottom: 0.3rem;
+      }
+      
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; // 16:9 aspect ratio
+        overflow: hidden;
+        border-radius: 8px;
+        
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+  }
+
+  // Dune message for extra small screens
+  #Header {
+    .dune-message {
+      max-width: 250px;
+      margin: 0.5rem auto 0 auto;
+    }
+  }
+
+  // Authors Page for extra small screens
+  #author-bios {
+    .authors-grid {
+      gap: 1rem;
+    }
+
+    .author-card {
+      padding: 1rem;
+    }
+
+    .authors-timeline {
+      .timeline {
+        padding-left: 0.5rem;
+
+        .timeline-item {
+          padding-left: 1rem;
+
+          &::before {
+            left: -0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Novels Page for extra small screens
+  #novels {
+    .novels-grid {
+      gap: 1rem;
+    }
+
+    .novel-category {
+      padding: 1rem;
+    }
+  }
+
+  // Books Page for extra small screens
+  #buy-books {
+    .retailers-grid {
+      gap: 1rem;
+    }
+
+    .retailer-card {
+      padding: 1rem;
+    }
+
+    .reading-order {
+      padding: 1rem;
+
+      ol li {
+        padding: 0.6rem;
+        margin-left: 1.5rem;
+
+        &::before {
+          left: -1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Small phones (481px - 600px)
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  #Navigation {
+    padding: 0.4rem 0;
+    
+    img {
+      height: 38px;
+    }
+  }
+
+  #Header {
+    padding: 0.8rem 0;
+
+    .announcement-banner {
+      padding: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      h1 {
+        font-size: $xl;
+        margin: 0.4rem 0;
+      }
+
+      h2 {
+        font-size: $lg;
+        margin: 0.3rem 0;
+      }
+
+      p {
+        font-size: $sm;
+        margin-top: 0.4rem;
+      }
+    }
+
+    h1 {
+      font-size: $lg;
+      padding: 0 0.8rem;
+    }
+
+    img {
+      margin-top: 0.8rem;
+      max-width: 90%;
+    }
+  }
+
+  #Movie {
+    padding: 1.5rem 0;
+
+    .movie-content {
+      gap: 1rem;
+    }
+
+    .movie-logo {
+      max-width: 350px;
+      max-height: 250px;
+    }
+
+    .play-btn {
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+
+      i {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .container {
+    padding: 0 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #Header {
+    h1 {
+      font-size: $xl;
+      margin-bottom: 2rem;
+    }
+    img {
+      margin-top: 1rem;
+    }
+  }
+
+  #Movie {
+    .movie-content {
+      gap: 1.5rem;
+    }
+
+    .movie-logo {
+      max-width: 650px;
+      max-height: 450px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #Navigation {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0;
+
+    ul {
+      display: none;
+    }
+    #nav-btn {
+      display: block;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+
+  #Header {
+    padding: 1rem 0;
+
+    .announcement-banner {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      h1 {
+        font-size: $xl;
+        margin: 0.5rem 0;
+      }
+
+      h2 {
+        font-size: $lg;
+        margin: 0.25rem 0;
+      }
+
+      p {
+        font-size: $sm;
+        margin-top: 0.5rem;
+      }
+    }
+
+    h1 {
+      font-size: $lg;
+      padding: 0 1rem;
+      line-height: 1.2;
+    }
+
+    img {
+      margin-top: 1rem;
+      max-width: 90%;
+    }
+  }
+
+  #Movie {
+    padding: 2rem 0;
+
+    .movie-content {
+      gap: 1rem;
+    }
+
+    .movie-logo {
+      max-width: 500px;
+      max-height: 350px;
+    }
+
+    .play-btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+
+      i {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  #Latest-news {
+    .news-article {
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+
+      h3 {
+        font-size: $lg;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: $md;
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+
+      .news-image {
+        margin: 1.5rem 0;
+
+        img {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  #Sign-up {
+    .form {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: $lg;
+        margin-bottom: 1.5rem;
+      }
+
+      .input-group {
+        margin-bottom: 1rem;
+
+        input {
+          padding: 0.6rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      .form-action .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  // New sections responsive design
+  #novels,
+  #author-bios,
+  #buy-books {
+    padding: 2rem 0;
+
+    .novels-grid,
+    .authors-grid,
+    .retailers-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .novel-category,
+    .author-card,
+    .retailer-card {
+      padding: 1.5rem;
+    }
+  }
+
+  // Back to Top Button responsive
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  // Trailer responsive
+  #trailer {
+    .trailers-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .trailer-item {
+      h3 {
+        font-size: $lg;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  // Dune message responsive
+  #Header {
+    .dune-message {
+      max-width: 300px;
+      margin: 1rem auto 0 auto;
+    }
+  }
+
+  // Authors Page Responsive
+  #author-bios {
+    .authors-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .author-card {
+      padding: 1.5rem;
+    }
+
+    .authors-timeline {
+      .timeline {
+        padding-left: 1rem;
+
+        .timeline-item {
+          padding-left: 1.5rem;
+
+          &::before {
+            left: -1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Novels Page Responsive
+  #novels {
+    .novels-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .novel-category {
+      padding: 1.5rem;
+    }
+  }
+
+  // Books Page Responsive
+  #buy-books {
+    .retailers-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .retailer-card {
+      padding: 1.5rem;
+    }
+
+    .reading-order {
+      padding: 1.5rem;
+
+      ol li {
+        padding: 0.8rem;
+        margin-left: 2rem;
+
+        &::before {
+          left: -2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,30 +1,43 @@
 {
-  "name": "dune-movie-website",
-  "version": "1.0.0",
-  "description": "Official Dune Movie Website - A responsive website showcasing the Dune universe",
-  "main": "index.html",
+  "name": "dune-movie-website-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/react-router-dom": "^5.3.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.92.1",
+    "typescript": "^4.9.5"
+  },
   "scripts": {
-    "build-css": "sass Sass/style.scss css/style.css",
-    "watch-css": "sass --watch Sass/style.scss:css/style.css",
-    "serve": "python3 -m http.server 8000",
-    "dev": "npm run watch-css & npm run serve"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
-  "keywords": [
-    "dune",
-    "movie",
-    "website",
-    "responsive",
-    "sass",
-    "css"
-  ],
-  "author": "Zeynep Yılmaz",
-  "license": "MIT",
-  "devDependencies": {
-    "sass": "^1.69.0"
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "off"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zbaharyilmaz/sass-dune-movie-website.git"
-  },
-  "homepage": "https://zbaharyilmaz.github.io/sass-dune-movie-website/"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

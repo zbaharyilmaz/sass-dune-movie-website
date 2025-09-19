@@ -7,5 +7,35 @@
 @import "./components/btn";
 @import "./components/form";
 
+// Movie Section Styles
+#Movie {
+  padding: 4rem 0;
+  text-align: center;
+  
+  .movie-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .movie-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+}
+
+#Header {
+  padding: 2rem 0;
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+
 @import "./utilities/responsive";
 

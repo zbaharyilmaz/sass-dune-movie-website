@@ -12,6 +12,8 @@
   vertical-align: middle;
   border: 1px solid #000;
   border-radius: 0.25rem;
+  text-decoration: none;
+  
   &-gold {
     background: $gold;
     color: #fff;
@@ -22,5 +24,22 @@
       transition: 0.3s ease;
     }
     transition: 0.3s ease;
+  }
+}
+
+.play-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  
+  i {
+    font-size: 3rem;
+  }
+  
+  span {
+    font-weight: 600;
   }
 }

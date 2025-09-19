@@ -1,53 +1,78 @@
 @media screen and (max-width: 1220px) {
   #Header {
-    h2 {
-      margin-top: 3rem;
-      font-weight: 100;
-      @include fadeIn;
+    h1 {
+      font-size: $xl;
+      margin-bottom: 2rem;
     }
-    height: 85vh;
     img {
-      margin: 20vh auto;
+      margin-top: 1rem;
     }
   }
+  
   #Movie {
-    flex-direction: column;
-    h2,
-    i {
-      margin-bottom: $xxl;
+    .movie-content {
+      gap: 1.5rem;
+    }
+    
+    .movie-logo {
+      max-height: 250px;
     }
   }
 }
 @media screen and (max-width: 600px) {
   #Navigation {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    
     ul {
       display: none;
     }
     #nav-btn {
       display: block;
     }
+    
+    img {
+      height: 40px;
+    }
   }
+  
   #Header {
-    img {
-      margin: 10vh auto;
-      transform: scale(0.6);
-      max-width: 100%;
-    }
-    h2 {
+    padding: 1rem 0;
+    
+    h1 {
       font-size: $lg;
       padding: 0 1rem;
+      line-height: 1.2;
+    }
+    
+    img {
+      margin-top: 1rem;
+      max-width: 90%;
     }
   }
+  
   #Movie {
-    h2 {
-      font-size: $lg;
-      padding: 0 1rem;
+    padding: 2rem 0;
+    
+    .movie-content {
+      gap: 1rem;
     }
-    img {
-      height: 200px;
-      max-width: 100%;
+    
+    .movie-logo {
+      max-height: 200px;
+    }
+    
+    .play-btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      
+      i {
+        font-size: 2.5rem;
+      }
     }
   }
+  
   #Latest-news {
     text-align: center;
     img {
@@ -63,6 +88,7 @@
       padding: 0 1rem;
     }
   }
+  
   .container {
     padding: 0 1rem;
   }

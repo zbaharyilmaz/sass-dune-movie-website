@@ -1,6 +1,6 @@
-# Dune Movie Website React
+# TS-Dune Website
 
-A modern, responsive website dedicated to the Dune movie franchise built with React, TypeScript, and SCSS.
+A modern, responsive website dedicated to the Dune movie franchise built with React, TypeScript, SCSS, and Vite.
 
 ## 🌟 Features
 
@@ -16,7 +16,7 @@ A modern, responsive website dedicated to the Dune movie franchise built with Re
 
 Check out the live demo of the Dune Movie Website:
 
-![Dune Movie Website Demo](assets/media/website.gif)
+![Dune Movie Website Demo](https://raw.githubusercontent.com/zbaharyilmaz/sass-dune-movie-website/main/public/assets/media/website.gif)
 
 _Experience the full Dune universe with smooth animations, responsive design, and interactive features._
 
@@ -42,69 +42,14 @@ _Experience the full Dune universe with smooth animations, responsive design, an
 - **Styling**: SCSS/Sass 1.92.1
 - **Routing**: React Router DOM 7.9.1
 - **Email Service**: EmailJS 4.4.1
-- **Build Tool**: Create React App
-
-## 📁 Project Structure
-
-```
-src/
-├── components/          # Reusable React components
-│   ├── AuthorsSection.tsx
-│   ├── BackToTopButton.tsx
-│   ├── BuyBooksSection.tsx
-│   ├── Footer.tsx
-│   ├── Header.tsx
-│   ├── LatestNewsSection.tsx
-│   ├── MovieSection.tsx
-│   ├── Navigation.tsx
-│   ├── NovelsSection.tsx
-│   ├── QuickLinksSection.tsx
-│   ├── ScrollToTop.tsx
-│   ├── SignUpSection.tsx
-│   └── TrailerSection.tsx
-├── hooks/              # Custom React hooks
-│   ├── useMainFunctionality.ts
-│   └── useNewsletter.ts
-├── pages/              # Page components
-│   ├── AuthorsPage.tsx
-│   ├── BooksPage.tsx
-│   └── NovelsPage.tsx
-├── Sass/               # SCSS stylesheets
-│   ├── components/     # Component-specific styles
-│   ├── utilities/      # Variables, mixins, responsive
-│   └── style.scss      # Main stylesheet
-├── App.tsx             # Main application component
-├── index.tsx           # Application entry point
-└── index.css           # Global CSS styles
-```
-
-## 🎨 Design Features
-
-### Color Palette
-
-- **Primary Gold**: #be984f
-- **Mid Gold**: #c0af70
-- **Light Gold**: #cfb591
-- **Dark Background**: #000000
-
-### Typography
-
-- **Headings**: Custom font with gold styling
-- **Body Text**: Clean, readable fonts with proper contrast
-- **Responsive Sizing**: Scales appropriately across devices
-
-### Components
-
-- **Navigation**: Collapsible mobile menu with smooth transitions
-- **Trailers**: Responsive video grid with hover effects
-- **Cards**: Hover animations and shadow effects
-- **Forms**: Styled input fields with focus states
+- **Build Tool**: Vite 7.1.6
+- **Development**: Hot Module Replacement (HMR)
 
 ## 🚀 Getting Started
 
 ### 🌐 Demo
 
-Demo: [View Demo]()
+Demo: [](./public/assets/media/website.gif)
 
 ### Prerequisites
 
@@ -116,8 +61,8 @@ Demo: [View Demo]()
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/zbaharyilmaz/sass-dune-movie-website.git
-   cd sass-dune-movie-website
+   git clone https://github.com/zbaharyilmaz/ts-dune-website.git
+   cd ts-dune-website
    ```
 
 2. **Install dependencies**
@@ -129,7 +74,7 @@ Demo: [View Demo]()
 3. **Start the development server**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **Open your browser**
@@ -143,39 +88,28 @@ npm run build
 
 This creates an optimized production build in the `build` folder.
 
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+This serves the production build locally for testing.
+
+## ⚡ Vite Benefits
+
+- **Lightning Fast**: Development server starts in milliseconds
+- **Hot Module Replacement**: Instant updates without page refresh
+- **Optimized Builds**: Rollup-powered production builds
+- **Native TypeScript**: Built-in TypeScript support
+- **Modern Tooling**: ES modules and modern JavaScript features
+- **Smaller Bundle Size**: Better tree-shaking and optimization
+
 ## 📄 Available Scripts
 
-- `npm start` - Runs the app in development mode
+- `npm run dev` - Runs the app in development mode with Vite
 - `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App (one-way operation)
-
-## 🌐 Pages
-
-### Homepage (`/`)
-
-- Hero section with Dune movie announcement
-- Official trailers with "Show More" functionality
-- Latest news and updates
-- Quick links to other sections
-- Newsletter signup
-
-### Authors Page (`/authors`)
-
-- Biographies of Frank Herbert, Brian Herbert, and Kevin J. Anderson
-- Key achievements and works
-- Timeline of Dune universe development
-
-### Novels Page (`/novels`)
-
-- Complete list of Dune novels
-- Organized by series (Original Chronicles, Prelude, Legends)
-- Publication years and descriptions
-
-### Books Page (`/books`)
-
-- Retailer links (Amazon, Barnes & Noble, Audiobooks)
-- Direct purchase links
-- Reading order recommendations
+- `npm run preview` - Preview the production build locally
 
 ## 📱 Responsive Features
 
@@ -211,10 +145,13 @@ This creates an optimized production build in the `build` folder.
 
 ## 🎯 Performance Optimizations
 
+- **Vite Build Tool**: Lightning-fast development with Hot Module Replacement (HMR)
 - **Code Splitting**: Automatic code splitting with React Router
 - **Lazy Loading**: Images and components load as needed
-- **Optimized Build**: Production build with minification
-- **SCSS Compilation**: Efficient CSS preprocessing
+- **Optimized Build**: Production build with Rollup bundling and minification
+- **SCSS Compilation**: Efficient CSS preprocessing with Vite
+- **Tree Shaking**: Automatic dead code elimination
+- **ES Modules**: Native ES modules for faster loading
 
 ## 🔧 Customization
 
@@ -243,20 +180,6 @@ This creates an optimized production build in the `build` folder.
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📸 Screenshots
-
-### Desktop View
-
-![Desktop Screenshot](assets/images/desktop-screenshot.png)
-
-### Mobile View
-
-![Mobile Screenshot](assets/images/mobile-screenshot.png)
-
-### Tablet View
-
-![Tablet Screenshot](assets/images/tablet-screenshot.png)
 
 ## 📝 License
 

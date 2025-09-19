@@ -2,6 +2,10 @@
 
 A responsive website built with HTML5, CSS3, and Sass/SCSS showcasing the epic Dune universe. This project demonstrates modern web development practices with clean, organized code and responsive design.
 
+## 🎬 Visual Demo
+
+![Dune Website Demo](./assets/media/website.gif)
+
 ## 🚀 Features
 
 - **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
@@ -113,19 +117,3 @@ npm run serve
 
 The website is deployed on GitHub Pages and can be accessed at:
 [https://zbaharyilmaz.github.io/sass-dune-movie-website/](https://zbaharyilmaz.github.io/sass-dune-movie-website/)
-
-## 📄 License
-
-This project is for educational purposes and is not affiliated with Warner Bros. or Legendary Pictures.
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📞 Contact
-
-For questions or feedback, please open an issue on GitHub.
-
-## 🎬 Visual Demo
-
-![Dune Website Demo](./assets/media/website.gif)

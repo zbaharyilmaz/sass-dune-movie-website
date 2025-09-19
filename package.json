@@ -1,0 +1,30 @@
+{
+  "name": "dune-movie-website",
+  "version": "1.0.0",
+  "description": "Official Dune Movie Website - A responsive website showcasing the Dune universe",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "sass Sass/style.scss css/style.css",
+    "watch-css": "sass --watch Sass/style.scss:css/style.css",
+    "serve": "python3 -m http.server 8000",
+    "dev": "npm run watch-css & npm run serve"
+  },
+  "keywords": [
+    "dune",
+    "movie",
+    "website",
+    "responsive",
+    "sass",
+    "css"
+  ],
+  "author": "Zeynep Yılmaz",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbaharyilmaz/sass-dune-movie-website.git"
+  },
+  "homepage": "https://zbaharyilmaz.github.io/sass-dune-movie-website/"
+}

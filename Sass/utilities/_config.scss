@@ -18,10 +18,32 @@ body {
   font-family: "Playfair Display", serif;
   background-color: $dark;
   color: $gold-light;
+  line-height: 1.6;
 }
 
 section {
   margin: auto;
+  padding: 1rem 0;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Milonga", cursive;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
